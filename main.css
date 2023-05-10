@@ -122,7 +122,7 @@ transition: opacity 2.5s ease-in-out;
     justify-content: flex-start;
     flex-wrap: nowrap;
     align-items: center;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
   }
 
   .container .card {
