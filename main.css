@@ -116,6 +116,10 @@ transition: opacity 2.5s ease-in-out;
 }
 
 @media only screen and (max-width: 991px) {
+  header h1 {
+    padding-top: 4rem;
+  }
+  
   .container {
     display: flex;
     flex-direction: column;
