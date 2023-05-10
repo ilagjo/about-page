@@ -1,0 +1,188 @@
+/*** GENERAL ***/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*** HEADER ***/
+header {
+  background-image: url(pexels-johannes-plenio-1103970.jpg);
+  background-size: cover;
+  height: 15rem;
+  box-shadow: 0px 2px 4px rgb(56, 77, 108);
+}
+
+h1,
+h5 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-size-adjust: auto;
+  text-decoration: normal;
+  letter-spacing: 0.5rem;
+}
+
+h1 {
+  color: white;
+  padding-top: 6rem;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 2px #202236;
+}
+
+.effects {
+    animation: custom 1s ease-in-out forwards;
+    opacity: 0;
+    text-shadow: 2px 2px 2px whitesmoke;
+    transform: translateY(0);
+}
+
+@keyframes custom {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(2rem);
+    }
+}
+
+
+/**** CARDS ****/
+.container .card {
+opacity: 0;
+transition: opacity 2.5s ease-in-out;
+}
+
+.container .card.visible {
+  opacity: 1;
+}
+
+.btn.btn-primary {
+  background-color: #106faed3; 
+  border-radius: 70px;
+}
+
+.btn.btn-primary:hover {
+  background-color: rgb(6, 176, 119);
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin: 1.5rem auto;
+  }
+
+  .container .card {
+    display: flex;
+    box-shadow: 10px 10px 5px lightgray;
+    margin: 15px;
+  }
+
+  .container #center {
+    display: flex;
+    box-shadow: 0px 10px 5px lightgray;
+    margin: 15px;
+  }
+
+  .container #right {
+    display: flex;
+    box-shadow: -10px 10px 5px lightgray;
+    margin: 15px;
+  }
+
+  .card-footer {
+    border-top: none;
+  }
+
+  .card:hover {
+    box-shadow: 10px 10px 5px gray;
+    bottom: 5px;
+  }
+
+  .container #center:hover {
+    box-shadow: 0px 10px 5px gray;
+    bottom: 5px;
+  }
+
+  .container #right:hover {
+    box-shadow: -10px 10px 5px gray;
+    bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+
+  .container .card {
+    display: flex;
+    box-shadow: 0px 10px 5px lightgray;
+    margin: 15px;
+  }
+
+}
+
+
+
+/**** FOOTER ****/
+footer {
+  height: 10%;
+  text-align: center;
+  padding: 15px;
+  background-image: url(pexels-johannes-plenio-1103970.jpg);
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0px -2px 4px rgb(56, 77, 108);
+}
+
+footer img {
+  transform: translateY(-10px);
+  animation: slide-in 2s ease-in-out forwards;
+  opacity: 0.4;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+footer .social img:hover {
+  opacity: 1;
+}
+
+footer a {
+  display: inline-block;
+  padding: 2px 4px;
+}
+
+footer span {
+  font-size: 0.8rem;
+  padding-bottom: 2rem;
+  color: black;
+}
+
+footer span a {
+  text-decoration: none;
+  color: black;
+}
+
+footer span a:hover {
+  color: whitesmoke;
+}
