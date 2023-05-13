@@ -10,7 +10,7 @@ header {
   background-image: url(pexels-johannes-plenio-1103970.jpg);
   background-size: cover;
   height: 15rem;
-  box-shadow: 0px 2px 4px rgb(56, 77, 108);
+  box-shadow: 0px 2px 4px rgb(110, 140, 184);
 }
 
 h1,
@@ -31,7 +31,7 @@ h1 {
 }
 
 .effects {
-    animation: custom 1s ease-in-out forwards;
+    animation: custom 2s ease-in-out forwards;
     opacity: 0;
     text-shadow: 2px 2px 2px whitesmoke;
     transform: translateY(0);
@@ -131,7 +131,7 @@ transition: opacity 2.5s ease-in-out;
 
   .container .card {
     display: flex;
-    box-shadow: 0px 10px 5px lightgray;
+    box-shadow: 0px 10px 5px gray;
     margin: 15px;
   }
 
@@ -149,7 +149,7 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
-  box-shadow: 0px -2px 4px rgb(56, 77, 108);
+  box-shadow: 0px -2px 4px rgb(110, 140, 184);
 }
 
 footer img {
