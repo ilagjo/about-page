@@ -4,6 +4,7 @@ const cardsData = [
       imgSrc: "Portfolio.png",
       imgAlt: "Area Front-End Development",
       description: "CV e attestati, portfolio pagine web e progetti",
+      href: "https://ilagjo.github.io/resume/"
     },
     {
       id: "center",
@@ -30,7 +31,7 @@ function createCards(cardsData) {
           <p class="card-text">${card.description}</p>
         </div>
         <div class="card-footer">
-          <a href="#" class="btn btn-primary">Vai</a>
+          <a href="${card.href}" class="btn btn-primary">Vai</a>
         </div>
       </div>
     `;
